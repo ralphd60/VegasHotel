@@ -13,6 +13,8 @@ def GraphOutput(result_counts):
     ax.set_title('Vegas Hotel Survey', fontsize=10, color='b')
     ax.set_xticklabels(list(result_counts.keys()), rotation=90, fontsize=7)
 
+    # ax.legend((rects1[0], ('Reviews')
+
     def autolabel(rects):
         """
         Attach a text label above each bar displaying its height
