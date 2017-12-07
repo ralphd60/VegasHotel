@@ -28,10 +28,11 @@ def count_entries(csv_file, c_size, delimit, *args):
 
 if __name__ == '__main__':
     result_counts = \
-        count_entries('c:\\temp\\LasVegasTripAdvisorReviews-Dataset.csv', 100, ';', 'User country')
+        count_entries('c:\\temp\\LasVegasTripAdvisorReviews-Dataset.csv', 100, ';', 'User country', 'Nr. hotel reviews')
         # count_entries('c:\\temp\\NYPD_Motor_Vehicle_Collisions.csv', 10000, ',', 'CONTRIBUTING FACTOR VEHICLE 1',\
         # 'NUMBER OF PERSONS KILLED')
-        #
+
+    #
     # Print result_counts
     print(result_counts)
 
