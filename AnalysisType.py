@@ -10,7 +10,7 @@ def TypeLabelandTotal(row, col, col2, counts_dict2):
 
     return counts_dict2
 # receives a label and then counts that label
-def TypeCount (row,col,counts_dict2):
+def TypeCount (row, col, counts_dict2):
     if row[col] in counts_dict2.keys():
         counts_dict2[row[col]] += 1
     else:
