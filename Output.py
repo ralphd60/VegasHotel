@@ -7,6 +7,4 @@ def GraphOutput(result_counts):
     plt.xticks(rotation='vertical', fontsize = 5)
     plt.title('Vegas Hotel Survey', fontsize=10, color = 'blue')
 
-
-
     plt.show()
