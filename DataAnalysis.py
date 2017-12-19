@@ -24,9 +24,9 @@ def count_entries(csv_file, c_size, delimit, *args):
         # Iterate over the column in DataFrame
         for lab, row in chunk.iterrows():
             if switch == 2:
-                counts_dict = TypeLabelandTotal(row, colname[0], colname[1], counts_dict)
+                counts_dict = type_label_and_total(row, colname[0], colname[1], counts_dict)
             elif switch == 1:
-                counts_dict = TypeCount(row, colname[0], counts_dict)
+                counts_dict = type_count(row, colname[0], counts_dict)
     # Return counts_dict
     return counts_dict
 
@@ -40,5 +40,5 @@ if __name__ == '__main__':
     # Print result_counts
     print(result_counts)
 
-    GraphOutput(result_counts)
+    graph_output(result_counts)
 

@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-def GraphOutput(result_counts):
+def graph_output(result_counts):
     N = len(result_counts)
     width = .75
     ind = np.arange(N)
