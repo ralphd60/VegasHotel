@@ -5,10 +5,15 @@ from Output import *
 
 # Define count_entries()
 def count_entries(csv_file, c_size, delimit, *args):
-    """Return a dictionary with counts of
+    """Return a dictionary with counts of or totals of a second column
     occurrences as value for each key."""
+    # counts how many arguments in order to determine how many columns are used
     switch = len(args)
+
+    # initialize and empty list to hold the arguments
     colname = []
+
+    # populate the list with arguments (may want to use key word argument dictionary
     for argv in args:
         colname.append(argv)
     # Initialize an empty dictionary: counts_dict
@@ -22,7 +27,7 @@ def count_entries(csv_file, c_size, delimit, *args):
                 counts_dict = TypeLabelandTotal(row, colname[0], colname[1], counts_dict)
             elif switch == 1:
                 counts_dict = TypeCount(row, colname[0], counts_dict)
-     # Return counts_dict
+    # Return counts_dict
     return counts_dict
 
 
@@ -32,7 +37,6 @@ if __name__ == '__main__':
         # count_entries('c:\\temp\\NYPD_Motor_Vehicle_Collisions.csv', 10000, ',', 'CONTRIBUTING FACTOR VEHICLE 1',\
         # 'NUMBER OF PERSONS KILLED')
 
-    #
     # Print result_counts
     print(result_counts)
 
